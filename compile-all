@@ -1,0 +1,106 @@
+#!/usr/bin/python3
+# -*- encoding: utf-8 -*-
+
+"""
+compile-all - Sequentially compile the whole DesQ project
+
+###================== Program Info ==================###
+    Program Name : compile-all
+    Version : 1.0.0
+    Platform : Linux/Unix
+    Requriements :
+        Must :
+            modules os, sys
+    Python Version : Python 3.4 or higher
+    Author : Marcus Britanicus
+    Email : marcusbritanicus@gmail.com
+    License : Public Domain
+###==================================================###
+"""
+
+### =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+
+    #
+    # This script is in public domain; do whatever you want to do with it.
+    #
+
+    #
+    # This program is distributed in the hope that it will be useful,
+    # but WITHOUT ANY WARRANTY; without even the implied warranty of
+    # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    #
+
+### =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+
+import os, sys
+
+Project = [
+    # Libraries
+    "LibDesQ/libdesq",
+    "LibDesQ/libdesqui",
+
+    # Session
+    "Session",
+
+    # Shell UI
+    "Shell",
+
+    # Theme
+    'Theme',
+
+    # DesQ Utils
+    "Utils/Clipboard",
+    ## "Utils/Clock",
+    "Utils/Disks",
+    ## "DesQUtils/Dock",
+    "Utils/Keyring",
+    "Utils/Lock",
+    ## "Utils/OSK",
+    "Utils/Notifier",
+    "Utils/Panel",
+    "Utils/PolkitExec",
+    "Utils/PowerManager",
+    "Utils/Runner",
+    "Utils/SNI",
+    "Utils/Splash",
+    ## "Utils/SshAskPass",
+    "Utils/Volume",
+
+    # DesQ Apps
+    'Apps/Archiver',
+    'Apps/DropDown',
+    'Apps/Docs',
+    'Apps/Term',
+    'Apps/Files',
+    'Apps/Eye',
+    ## 'DesQApps/DesQStats'
+    ## 'DesQApps/DesQText'
+]
+
+
+if __name__ == '__main__' :
+
+    for proj in Project:
+        os.chdir( proj )
+        if ( not os.path.exists( ".build" ) ):
+            os.system( "meson .build --prefix=/usr --buildtype=release" )
+
+        ret = 0
+        while True:
+            ret = os.system( "ninja -C .build -k 0 -j 2" )
+            if not ret:
+                break;
+
+            input( "Errors encountered while building. Review the code, make edits and hit Enter to proceed." )
+
+        # Procees only if compilation was successful.
+        while True:
+            ret = os.system( "sudo ninja -C .build install" )
+            if ( not ret ):
+                break;
+
+            input( "Errors encountered while installing. Review the install instructions and hit Enter to proceed." )
+
+        os.chdir( "../" )
+        if ( "/" in proj ):
+            os.chdir( "../" )

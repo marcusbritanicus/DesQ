@@ -1,0 +1,81 @@
+[submodule "LibDesQ/libdesqui"]
+	path = LibDesQ/libdesqui
+	url = https://marcusbritanicus@gitlab.com/DesQ/libdesqui.git
+[submodule "LibDesQ/libdesq"]
+	path = LibDesQ/libdesq
+	url = https://marcusbritanicus@gitlab.com/DesQ/libdesq.git
+[submodule "Session"]
+	path = Session
+	url = https://marcusbritanicus@gitlab.com/DesQ/Session.git
+[submodule "Shell"]
+	path = Shell
+	url = https://marcusbritanicus@gitlab.com/DesQ/Shell.git
+[submodule "Theme"]
+	path = Theme
+	url = https://marcusbritanicus@gitlab.com/DesQ/Theme.git
+[submodule "Clipboard"]
+	path = Clipboard
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Clipboard.git
+[submodule "Disks"]
+	path = Disks
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Disks.git
+[submodule "Keyring"]
+	path = Keyring
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Keyring.git
+[submodule "Utils/Clipboard"]
+	path = Utils/Clipboard
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Clipboard.git
+[submodule "Utils/Disks"]
+	path = Utils/Disks
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Disks.git
+[submodule "Utils/Keyring"]
+	path = Utils/Keyring
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Keyring.git
+[submodule "Utils/Lock"]
+	path = Utils/Lock
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Lock.git
+[submodule "Utils/Notifier"]
+	path = Utils/Notifier
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Notifier.git
+[submodule "Utils/Panel"]
+	path = Utils/Panel
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Panel.git
+[submodule "Utils/PolkitExec"]
+	path = Utils/PolkitExec
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/PolkitExec.git
+[submodule "Utils/PowerManager"]
+	path = Utils/PowerManager
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/PowerManager.git
+[submodule "Utils/Runner"]
+	path = Utils/Runner
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Runner.git
+[submodule "Utils/SNI"]
+	path = Utils/SNI
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/SNI.git
+[submodule "Utils/Splash"]
+	path = Utils/Splash
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Splash.git
+[submodule "Utils/Volume"]
+	path = Utils/Volume
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQUtils/Volume.git
+[submodule "Apps/Archiver"]
+	path = Apps/Archiver
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQApps/DesQArchiver.git
+[submodule "Apps/Docs"]
+	path = Apps/Docs
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQApps/DesQDocs.git
+[submodule "Apps/Term"]
+	path = Apps/Term
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQApps/DesQTerm.git
+[submodule "Apps/Files"]
+	path = Apps/Files
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQApps/DesQFiles.git
+[submodule "Apps/Code"]
+	path = Apps/Code
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQApps/DesQCode.git
+[submodule "Apps/DropDown"]
+	path = Apps/DropDown
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQApps/DesQDropDown.git
+[submodule "Apps/Eye"]
+	path = Apps/Eye
+	url = https://marcusbritanicus@gitlab.com/DesQ/DesQApps/DesQEye.git
